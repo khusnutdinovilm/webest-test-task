@@ -13,7 +13,7 @@ defineOptions({
 <style lang="scss">
 .base-button {
   background-color: orange;
-  padding: 12px;
+  padding: 10px;
   border-radius: 12px;
 }
 </style>
