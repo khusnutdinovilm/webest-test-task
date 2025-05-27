@@ -6,7 +6,20 @@
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
 
     "paths": {
-      "@/*": ["./src/*"]
+      "api/*": ["./src/api/*"],
+      "pages/*": ["./src/pages/*"],
+      "layouts/*": ["./src/layouts/*"],
+      "assets/*": ["./src/assets/*"],
+      "styles/*": ["./src/styles/*"],
+      "icons/*": ["./src/components/icons/*"],
+      "common/*": ["./src/components/common/*"],
+      "shared/*": ["./src/components/shared/*"],
+      "ui/*": ["./src/components/ui/*"],
+      "modules/*": ["./src/modules/*"],
+      "composable/*": ["./src/composable/*"],
+      "utils/*": ["./src/utils/*"],
+      "router/*": ["./src/router/*"],
+      "store/*": ["./src/store/*"]
     }
   }
 }
