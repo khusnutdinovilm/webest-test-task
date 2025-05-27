@@ -1,9 +1,7 @@
 <template>
   <app-header />
 
-  <main>
-    <router-view />
-  </main>
+  <router-view />
 </template>
 
 <script setup lang="ts">
@@ -14,7 +12,7 @@ import AppHeader from "common/app-header";
 #app {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 40px;
   min-height: 100dvh;
 
   & main {
