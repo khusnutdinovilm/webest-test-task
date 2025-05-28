@@ -4,6 +4,9 @@ import MainLayout from "layouts/main-layout.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
+  scrollBehavior() {
+    return { top: 0, behavior: "smooth" };
+  },
 
   routes: [
     {
