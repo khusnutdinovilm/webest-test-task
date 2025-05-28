@@ -29,6 +29,6 @@ const props = defineProps<{
 
 const pageContentClasses = computed(() => ({
   "page__content--loading": props.isContentLoading,
-  "page__content--empty": props.isContentEmpty,
+  "page__content--empty": !props.isContentLoading && props.isContentEmpty,
 }));
 </script>
