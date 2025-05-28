@@ -1,7 +1,11 @@
 <template>
   <app-header />
 
-  <router-view />
+  <router-view #default="{ Component }">
+    <transition name="fade">
+      <component :is="Component" />
+    </transition>
+  </router-view>
 </template>
 
 <script setup lang="ts">
@@ -18,5 +22,15 @@ import AppHeader from "common/app-header";
   & main {
     flex: 1;
   }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.7s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>
