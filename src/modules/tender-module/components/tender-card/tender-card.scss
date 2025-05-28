@@ -1,0 +1,39 @@
+.tender-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid black;
+  border-radius: 12px;
+  padding: 10px;
+
+  &--skeleton {
+    gap: 20px;
+  }
+
+  cursor: pointer;
+
+  &--skeleton &__title {
+    margin-top: 10px;
+  }
+
+  &__title {
+    font-weight: 600;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  &--skeleton &__description {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  &__description {
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
