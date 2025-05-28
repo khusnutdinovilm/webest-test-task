@@ -48,6 +48,6 @@ export default class TenderService extends CachedApi {
   }
 
   async getTenderItem(tender_id: string): Promise<ITenderItem> {
-    return await this.get(`/element/?id=${tender_id}`);
+    return await this.getCached<ITenderItem>(`/element/?id=${tender_id}`);
   }
 }
